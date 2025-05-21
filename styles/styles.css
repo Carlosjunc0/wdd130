@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --text-allign: center;
+    --height: auto;
+    --main-color: darkblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 main {
     max-width: 840px;
 }
@@ -9,21 +22,25 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
+    text-align: var(--text-allign);
+}
+
+body {
+font-family: Brush system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--height);
 }
 
 footer {
     margin-top: 1em;
     border-top: 1px solid #000;
-    text-align: center ;
+    text-align: var(--text-allign);
 }
 nav {
-    background-color: darkblue;
+    background-color: var(--main-color);
     padding: 10px;
 }
 
@@ -34,12 +51,17 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--main-color);
+    font-family: 'Arial Black';
+}
+
+h2 {
+    font-family: Open Sans;
 }
 
 img {
     width: 150px;
-    height: auto;
+    height: var(--height);
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
@@ -49,3 +71,4 @@ p {
     padding: 0;
 }
 
+/* Class Selectors ¨/
