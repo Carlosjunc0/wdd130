@@ -1,0 +1,36 @@
+/* The color palette URL: https://coolors.co/palette/22577a-38a3a5-57cc99-80ed99-c7f9cc */
+:root {
+    --primarly-color: #22577a;
+    --secondary-color: #38a3a5;
+    --accent1-color: #57cc99;
+    --accent2-color: #80ed99;
+    --contrast-color: #c7f9cc;
+
+    --main-font:
+}
+
+main {
+    max-width: 840px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Ancizar Serif", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+.banner-box {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    width: 5rem;
+    background-color: var(--contrast-color);
+}
