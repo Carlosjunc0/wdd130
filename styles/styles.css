@@ -6,48 +6,59 @@
     --main-color: darkblue;
 }
 
+/*
 * {
-    margin: 0;
+
     padding: 0;
     box-sizing: border-box;
-}
-main {
+} */
+
+header, .grid, footer {
     max-width: 840px;
+    margin: 0 auto;
 }
 
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+h1 {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #000;
     text-align: var(--text-allign);
 }
 
+
 body {
-font-family: Brush system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-family: Brush system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    margin: 8px;
 }
 
+/*
 aside img {
     width: 200px;
     height: var(--height);
-}
+} */
 
 footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: var(--text-allign);
 }
-nav {
+
+nav { /*top design*/
     background-color: var(--main-color);
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5 rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 h1 {
@@ -59,16 +70,62 @@ h2 {
     font-family: Open Sans;
 }
 
-img {
-    width: 150px;
+.profile-image img {
+    width: 206px;
     height: var(--height);
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 0;
+.right-column {
+    width: 60%;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
+.right-column h1 {
+  color: var(--main-color);
+  font-size: 24px;
+}
+
+.right-column hr {
+  margin: 10px 0;
+}
+
+.right-column p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+.left-column {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: var(--text-allign);
+}
+
+.left-column p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.left-column img {
+    width: 206px;
+    height: var(--height);
+}
+
+.right-column ul {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: start;
+}
 /* Class Selectors ¨/
