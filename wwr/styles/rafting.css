@@ -4,26 +4,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --primarly-color: #22577a;
+  --primarly-color: #3c8abd;
   --secondary-color: #000000;
-  --accent1-color: #57cc99;
+  --accent1-color: #44af81;
   --accent2-color: #80ed99;
   --contrast-color: #c7f9cc;
   --headding-font: "Ancizar Serif", serif;
   --body-font: "Raleway", sans-serif;
 }
 
+  /* set color to header */
 header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 100px 1fr;
+  justify-content: space-between;
   background-color: var(--primarly-color);
-  color: var(--accent2-color);
+	max-width: 1000px;
 }
 
+header nav {
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+  align-items: center;
+}
+
+header a {
+  color: #fff;
+}
+
+/* remove underline */
+nav ul li a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+header img {
+	margin: 0 0 0 5rem;
+	width: 64px;
+	height: auto;
+}
+  /* Apply to all items */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+  /* set a color to the tittle */
 .title {
   color: #fff;
 }
@@ -89,7 +118,7 @@ article {
   padding: 16px;
   border-radius: 8px;
 }
-
+/*Create a box shadow */
 .hero article img {
   float: right;
   width: 125px;
@@ -103,3 +132,48 @@ nav ul {
   display: flex;
   justify-content:space-around;
 }
+
+/* Adventure Gallery */
+section {
+  padding: 2rem 1rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+section img {
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: var(--primarly-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer p {
+  flex: 1;
+  text-align: center;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+footer .socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+}
+
