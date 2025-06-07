@@ -20,7 +20,6 @@ header {
 	grid-template-columns: 100px 1fr;
   justify-content: space-between;
   background-color: var(--primarly-color);
-	max-width: 1000px;
 }
 
 header nav {
@@ -34,7 +33,11 @@ header a {
   color: #fff;
 }
 
-/* remove underline */
+nav ul{
+  font-weight: bold;
+  gap: 10rem;
+}
+
 nav ul li a {
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -65,8 +68,7 @@ body {
 header,
 main,
 footer {
-  width: 840px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 h1,
@@ -113,6 +115,7 @@ article {
   bottom: 20px;
   left: 20px;
   right: 20px;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 16px;
@@ -135,7 +138,7 @@ nav ul {
 
 /* Adventure Gallery */
 section {
-  padding: 2rem 1rem;
+  padding: 1.5rem;
   background-color: #fff;
   text-align: center;
 }
@@ -147,6 +150,7 @@ section h2 {
 }
 
 section img {
+  width: 255px;
   margin: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -154,8 +158,8 @@ section img {
 
 footer {
   background-color: var(--primarly-color);
+  padding: 10px;
   text-align: center;
-  padding: 1rem;
   font-size: 0.9rem;
   display: flex;
   justify-content: space-between;
