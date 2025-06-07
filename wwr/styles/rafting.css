@@ -1,7 +1,7 @@
 /* The color palette URL: https://coolors.co/palette/22577a-38a3a5-57cc99-80ed99-c7f9cc */
 
-@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.gstatic.com');
 
 :root {
   --primarly-color: #3c8abd;
