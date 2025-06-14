@@ -3,13 +3,14 @@
 @import url('https://fonts.gstatic.com');
 
 :root {
-  --primarly-color: #3c8abd;
+  --primarly-color: #94C1FF;
   --secondary-color: #000000;
   --accent1-color: #44af81;
   --accent2-color: #80ed99;
   --contrast-color: #c7f9cc;
   --headding-font: "Ancizar Serif", serif;
   --body-font: "Raleway", sans-serif;
+  --body-color: #000000;
 }
 
 * {
@@ -25,7 +26,7 @@ footer {
 }
 
 header {
-  color: white;
+  color: var(--body-color);
   display: grid;
   grid-template-columns: 150px 1fr;
   justify-content: space-between;
@@ -48,7 +49,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--body-color);
   text-decoration: none;
   font-weight: bold;
   font-family: var(--body-font);
@@ -98,7 +99,7 @@ article h2 {
   padding: 20px;
   text-align: center;
   opacity: 0.9;
-  background-color: var(--accent1-color);
+  background-color:#4A4A4A;
   color: #fff;
 }
 
@@ -139,6 +140,7 @@ section h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: #0037B8;
 }
 
 footer {
@@ -152,13 +154,13 @@ footer {
 }
 
 footer a {
-  color: #fff;
+  color: var(--body-color);
 }
 footer p {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  color: #fff;
+  color: var(--body-color);
 }
 
 footer .socialmedia {

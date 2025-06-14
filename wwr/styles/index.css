@@ -2,13 +2,14 @@
 @import url('https://fonts.gstatic.com');
 
 :root {
-  --primarly-color: #3c8abd;
+  --primarly-color: #94C1FF;
   --secondary-color: #000000;
   --accent1-color: #44af81;
   --accent2-color: #80ed99;
   --contrast-color: #c7f9cc;
   --headding-font: "Ancizar Serif", serif;
   --body-font: "Raleway", sans-serif;
+  --body-color: #000000;
 }
 
 * {
@@ -24,7 +25,7 @@ footer {
 }
 
 header {
-    color: white;
+    color: var(--body-color);
     display: grid;
     grid-template-columns: 150px 1fr;
     justify-content: space-between;
@@ -47,7 +48,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     font-family: var(--body-font);
@@ -73,7 +74,7 @@ nav ul li a {
     padding: 20px;
     text-align: center;
     opacity: 0.9;
-    background-color: var(--accent1-color);
+    background-color: #4A4A4A;
     color: #fff;
 }
 
@@ -123,8 +124,8 @@ input {
 }
 
 button {
-    background-color: var(--accent-color);
-    color: white;
+    background-color: var(--primarly-color);
+    color: var(--body-color);
     border: none;
     padding: 1rem 2rem;
     font-size: 1rem;
@@ -222,12 +223,12 @@ button:hover {
 
 .feature-item p {
     padding: 0 1rem 1.5rem;
-    color: #666;
+    color: var(--body-color);
 }
 
 /* Footer */
 footer {
-    color: #ffffff;
+    color: var(--body-color);
     font-family: var(--body-font);
     background-color: var(--primarly-color);
     font-size: 0.9rem;
@@ -238,7 +239,7 @@ footer {
 }
 
 footer a {
-    color: #ffffff;
+    color: var(--body-color);
 }
 
 footer img{
